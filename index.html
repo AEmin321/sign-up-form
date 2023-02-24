@@ -23,12 +23,12 @@
                 <fieldset>
                     <legend>Let's do this!</legend>
                     <div>
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname" name="first-name">
+                        <label for="fname">FIRST NAME *</label>
+                        <input type="text" id="fname" name="first-name" required>
                     </div>
                     <div>
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname" name="last-name">
+                        <label for="lname">LAST NAME *</label>
+                        <input type="text" id="lname" name="last-name" required>
                     </div>
                     <div>
                         <label for="email">EMAIL</label>
@@ -40,14 +40,14 @@
                     </div>
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input class="password" type="password" minlength="8" placeholder="min 8 characters" id="password" name="password">
                     </div>
                     <div>
                         <label for="c-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="c-password" name="confirm-password">
+                        <input class="confirm-password" type="password" minlength="8" placeholder="min 8 characters" id="c-password" name="confirm-password">
                     </div>
                     <div class="input-wrapper">
-                        <button>Create Account</button>
+                        <button onclick="checkPasword ()">Create Account</button>
                         <p>Already have an account? <a href="#">Log in</a></p>
                     </div>
 
